@@ -1,0 +1,2932 @@
+[
+  {
+    "input": "",
+    "types": [],
+    "values": [],
+    "schemes": [],
+    "expected": []
+  },
+  {
+    "input": "@",
+    "types": [
+      "AT"
+    ],
+    "values": [
+      "@"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "AT",
+        "v": "@",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": ":",
+    "types": [
+      "COLON"
+    ],
+    "values": [
+      ":"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "COLON",
+        "v": ":",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": ".",
+    "types": [
+      "DOT"
+    ],
+    "values": [
+      "."
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "DOT",
+        "v": ".",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "-",
+    "types": [
+      "HYPHEN"
+    ],
+    "values": [
+      "-"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "HYPHEN",
+        "v": "-",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "\n",
+    "types": [
+      "NL"
+    ],
+    "values": [
+      "\n"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "NL",
+        "v": "\n",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "\r\n",
+    "types": [
+      "NL"
+    ],
+    "values": [
+      "\r\n"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "NL",
+        "v": "\r\n",
+        "s": 0,
+        "e": 2
+      }
+    ]
+  },
+  {
+    "input": " \r\n",
+    "types": [
+      "WS",
+      "NL"
+    ],
+    "values": [
+      " ",
+      "\r\n"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 0,
+        "e": 1
+      },
+      {
+        "t": "NL",
+        "v": "\r\n",
+        "s": 1,
+        "e": 3
+      }
+    ]
+  },
+  {
+    "input": "\r\n ",
+    "types": [
+      "NL",
+      "WS"
+    ],
+    "values": [
+      "\r\n",
+      " "
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "NL",
+        "v": "\r\n",
+        "s": 0,
+        "e": 2
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 2,
+        "e": 3
+      }
+    ]
+  },
+  {
+    "input": "\r \n",
+    "types": [
+      "WS",
+      "NL"
+    ],
+    "values": [
+      "\r ",
+      "\n"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "WS",
+        "v": "\r ",
+        "s": 0,
+        "e": 2
+      },
+      {
+        "t": "NL",
+        "v": "\n",
+        "s": 2,
+        "e": 3
+      }
+    ]
+  },
+  {
+    "input": "+",
+    "types": [
+      "PLUS"
+    ],
+    "values": [
+      "+"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "PLUS",
+        "v": "+",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "#",
+    "types": [
+      "POUND"
+    ],
+    "values": [
+      "#"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "POUND",
+        "v": "#",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "/",
+    "types": [
+      "SLASH"
+    ],
+    "values": [
+      "/"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "SLASH",
+        "v": "/",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "&",
+    "types": [
+      "AMPERSAND"
+    ],
+    "values": [
+      "&"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "AMPERSAND",
+        "v": "&",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "*",
+    "types": [
+      "ASTERISK"
+    ],
+    "values": [
+      "*"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "ASTERISK",
+        "v": "*",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "\\",
+    "types": [
+      "BACKSLASH"
+    ],
+    "values": [
+      "\\"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "BACKSLASH",
+        "v": "\\",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "%",
+    "types": [
+      "PERCENT"
+    ],
+    "values": [
+      "%"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "PERCENT",
+        "v": "%",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "`",
+    "types": [
+      "BACKTICK"
+    ],
+    "values": [
+      "`"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "BACKTICK",
+        "v": "`",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "^",
+    "types": [
+      "CARET"
+    ],
+    "values": [
+      "^"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "CARET",
+        "v": "^",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "|",
+    "types": [
+      "PIPE"
+    ],
+    "values": [
+      "|"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "PIPE",
+        "v": "|",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "~",
+    "types": [
+      "TILDE"
+    ],
+    "values": [
+      "~"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "TILDE",
+        "v": "~",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "$",
+    "types": [
+      "DOLLAR"
+    ],
+    "values": [
+      "$"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "DOLLAR",
+        "v": "$",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "=",
+    "types": [
+      "EQUALS"
+    ],
+    "values": [
+      "="
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "EQUALS",
+        "v": "=",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "-",
+    "types": [
+      "HYPHEN"
+    ],
+    "values": [
+      "-"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "HYPHEN",
+        "v": "-",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "・",
+    "types": [
+      "FULLWIDTHMIDDLEDOT"
+    ],
+    "values": [
+      "・"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "FULLWIDTHMIDDLEDOT",
+        "v": "・",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "&?<>(",
+    "types": [
+      "AMPERSAND",
+      "QUERY",
+      "OPENANGLEBRACKET",
+      "CLOSEANGLEBRACKET",
+      "OPENPAREN"
+    ],
+    "values": [
+      "&",
+      "?",
+      "<",
+      ">",
+      "("
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "AMPERSAND",
+        "v": "&",
+        "s": 0,
+        "e": 1
+      },
+      {
+        "t": "QUERY",
+        "v": "?",
+        "s": 1,
+        "e": 2
+      },
+      {
+        "t": "OPENANGLEBRACKET",
+        "v": "<",
+        "s": 2,
+        "e": 3
+      },
+      {
+        "t": "CLOSEANGLEBRACKET",
+        "v": ">",
+        "s": 3,
+        "e": 4
+      },
+      {
+        "t": "OPENPAREN",
+        "v": "(",
+        "s": 4,
+        "e": 5
+      }
+    ]
+  },
+  {
+    "input": "([{}])",
+    "types": [
+      "OPENPAREN",
+      "OPENBRACKET",
+      "OPENBRACE",
+      "CLOSEBRACE",
+      "CLOSEBRACKET",
+      "CLOSEPAREN"
+    ],
+    "values": [
+      "(",
+      "[",
+      "{",
+      "}",
+      "]",
+      ")"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "OPENPAREN",
+        "v": "(",
+        "s": 0,
+        "e": 1
+      },
+      {
+        "t": "OPENBRACKET",
+        "v": "[",
+        "s": 1,
+        "e": 2
+      },
+      {
+        "t": "OPENBRACE",
+        "v": "{",
+        "s": 2,
+        "e": 3
+      },
+      {
+        "t": "CLOSEBRACE",
+        "v": "}",
+        "s": 3,
+        "e": 4
+      },
+      {
+        "t": "CLOSEBRACKET",
+        "v": "]",
+        "s": 4,
+        "e": 5
+      },
+      {
+        "t": "CLOSEPAREN",
+        "v": ")",
+        "s": 5,
+        "e": 6
+      }
+    ]
+  },
+  {
+    "input": "!,;'",
+    "types": [
+      "EXCLAMATION",
+      "COMMA",
+      "SEMI",
+      "APOSTROPHE"
+    ],
+    "values": [
+      "!",
+      ",",
+      ";",
+      "'"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "EXCLAMATION",
+        "v": "!",
+        "s": 0,
+        "e": 1
+      },
+      {
+        "t": "COMMA",
+        "v": ",",
+        "s": 1,
+        "e": 2
+      },
+      {
+        "t": "SEMI",
+        "v": ";",
+        "s": 2,
+        "e": 3
+      },
+      {
+        "t": "APOSTROPHE",
+        "v": "'",
+        "s": 3,
+        "e": 4
+      }
+    ]
+  },
+  {
+    "input": "hello",
+    "types": [
+      "WORD"
+    ],
+    "values": [
+      "hello"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "hello",
+        "s": 0,
+        "e": 5
+      }
+    ]
+  },
+  {
+    "input": "Hello123",
+    "types": [
+      "ASCIINUMERICAL"
+    ],
+    "values": [
+      "Hello123"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "ASCIINUMERICAL",
+        "v": "Hello123",
+        "s": 0,
+        "e": 8
+      }
+    ]
+  },
+  {
+    "input": "hello123world",
+    "types": [
+      "ASCIINUMERICAL"
+    ],
+    "values": [
+      "hello123world"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "ASCIINUMERICAL",
+        "v": "hello123world",
+        "s": 0,
+        "e": 13
+      }
+    ]
+  },
+  {
+    "input": "0123",
+    "types": [
+      "NUM"
+    ],
+    "values": [
+      "0123"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "NUM",
+        "v": "0123",
+        "s": 0,
+        "e": 4
+      }
+    ]
+  },
+  {
+    "input": "123abc",
+    "types": [
+      "ASCIINUMERICAL"
+    ],
+    "values": [
+      "123abc"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "ASCIINUMERICAL",
+        "v": "123abc",
+        "s": 0,
+        "e": 6
+      }
+    ]
+  },
+  {
+    "input": "http",
+    "types": [
+      "SLASH_SCHEME"
+    ],
+    "values": [
+      "http"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "SLASH_SCHEME",
+        "v": "http",
+        "s": 0,
+        "e": 4
+      }
+    ]
+  },
+  {
+    "input": "http:",
+    "types": [
+      "SLASH_SCHEME",
+      "COLON"
+    ],
+    "values": [
+      "http",
+      ":"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "SLASH_SCHEME",
+        "v": "http",
+        "s": 0,
+        "e": 4
+      },
+      {
+        "t": "COLON",
+        "v": ":",
+        "s": 4,
+        "e": 5
+      }
+    ]
+  },
+  {
+    "input": "https:",
+    "types": [
+      "SLASH_SCHEME",
+      "COLON"
+    ],
+    "values": [
+      "https",
+      ":"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "SLASH_SCHEME",
+        "v": "https",
+        "s": 0,
+        "e": 5
+      },
+      {
+        "t": "COLON",
+        "v": ":",
+        "s": 5,
+        "e": 6
+      }
+    ]
+  },
+  {
+    "input": "files:",
+    "types": [
+      "WORD",
+      "COLON"
+    ],
+    "values": [
+      "files",
+      ":"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "files",
+        "s": 0,
+        "e": 5
+      },
+      {
+        "t": "COLON",
+        "v": ":",
+        "s": 5,
+        "e": 6
+      }
+    ]
+  },
+  {
+    "input": "file//",
+    "types": [
+      "SCHEME",
+      "SLASH",
+      "SLASH"
+    ],
+    "values": [
+      "file",
+      "/",
+      "/"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "SCHEME",
+        "v": "file",
+        "s": 0,
+        "e": 4
+      },
+      {
+        "t": "SLASH",
+        "v": "/",
+        "s": 4,
+        "e": 5
+      },
+      {
+        "t": "SLASH",
+        "v": "/",
+        "s": 5,
+        "e": 6
+      }
+    ]
+  },
+  {
+    "input": "ftp://",
+    "types": [
+      "SLASH_SCHEME",
+      "COLON",
+      "SLASH",
+      "SLASH"
+    ],
+    "values": [
+      "ftp",
+      ":",
+      "/",
+      "/"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "SLASH_SCHEME",
+        "v": "ftp",
+        "s": 0,
+        "e": 3
+      },
+      {
+        "t": "COLON",
+        "v": ":",
+        "s": 3,
+        "e": 4
+      },
+      {
+        "t": "SLASH",
+        "v": "/",
+        "s": 4,
+        "e": 5
+      },
+      {
+        "t": "SLASH",
+        "v": "/",
+        "s": 5,
+        "e": 6
+      }
+    ]
+  },
+  {
+    "input": "mailto",
+    "types": [
+      "SCHEME"
+    ],
+    "values": [
+      "mailto"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "SCHEME",
+        "v": "mailto",
+        "s": 0,
+        "e": 6
+      }
+    ]
+  },
+  {
+    "input": "mailto:",
+    "types": [
+      "SCHEME",
+      "COLON"
+    ],
+    "values": [
+      "mailto",
+      ":"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "SCHEME",
+        "v": "mailto",
+        "s": 0,
+        "e": 6
+      },
+      {
+        "t": "COLON",
+        "v": ":",
+        "s": 6,
+        "e": 7
+      }
+    ]
+  },
+  {
+    "input": "c",
+    "types": [
+      "WORD"
+    ],
+    "values": [
+      "c"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "c",
+        "s": 0,
+        "e": 1
+      }
+    ]
+  },
+  {
+    "input": "co",
+    "types": [
+      "TLD"
+    ],
+    "values": [
+      "co"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "TLD",
+        "v": "co",
+        "s": 0,
+        "e": 2
+      }
+    ]
+  },
+  {
+    "input": "com",
+    "types": [
+      "TLD"
+    ],
+    "values": [
+      "com"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "TLD",
+        "v": "com",
+        "s": 0,
+        "e": 3
+      }
+    ]
+  },
+  {
+    "input": "comm",
+    "types": [
+      "WORD"
+    ],
+    "values": [
+      "comm"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "comm",
+        "s": 0,
+        "e": 4
+      }
+    ]
+  },
+  {
+    "input": "vermögensberater السعودية москва",
+    "types": [
+      "TLD",
+      "WS",
+      "UTLD",
+      "WS",
+      "UTLD"
+    ],
+    "values": [
+      "vermögensberater",
+      " ",
+      "السعودية",
+      " ",
+      "москва"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "TLD",
+        "v": "vermögensberater",
+        "s": 0,
+        "e": 16
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 16,
+        "e": 17
+      },
+      {
+        "t": "UTLD",
+        "v": "السعودية",
+        "s": 17,
+        "e": 25
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 25,
+        "e": 26
+      },
+      {
+        "t": "UTLD",
+        "v": "москва",
+        "s": 26,
+        "e": 32
+      }
+    ]
+  },
+  {
+    "input": "abc 123  DoReMi",
+    "types": [
+      "TLD",
+      "WS",
+      "NUM",
+      "WS",
+      "WORD"
+    ],
+    "values": [
+      "abc",
+      " ",
+      "123",
+      "  ",
+      "DoReMi"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "TLD",
+        "v": "abc",
+        "s": 0,
+        "e": 3
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 3,
+        "e": 4
+      },
+      {
+        "t": "NUM",
+        "v": "123",
+        "s": 4,
+        "e": 7
+      },
+      {
+        "t": "WS",
+        "v": "  ",
+        "s": 7,
+        "e": 9
+      },
+      {
+        "t": "WORD",
+        "v": "DoReMi",
+        "s": 9,
+        "e": 15
+      }
+    ]
+  },
+  {
+    "input": "abc 123 \n  DoReMi",
+    "types": [
+      "TLD",
+      "WS",
+      "NUM",
+      "WS",
+      "NL",
+      "WS",
+      "WORD"
+    ],
+    "values": [
+      "abc",
+      " ",
+      "123",
+      " ",
+      "\n",
+      "  ",
+      "DoReMi"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "TLD",
+        "v": "abc",
+        "s": 0,
+        "e": 3
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 3,
+        "e": 4
+      },
+      {
+        "t": "NUM",
+        "v": "123",
+        "s": 4,
+        "e": 7
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 7,
+        "e": 8
+      },
+      {
+        "t": "NL",
+        "v": "\n",
+        "s": 8,
+        "e": 9
+      },
+      {
+        "t": "WS",
+        "v": "  ",
+        "s": 9,
+        "e": 11
+      },
+      {
+        "t": "WORD",
+        "v": "DoReMi",
+        "s": 11,
+        "e": 17
+      }
+    ]
+  },
+  {
+    "input": "local",
+    "types": [
+      "WORD"
+    ],
+    "values": [
+      "local"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "local",
+        "s": 0,
+        "e": 5
+      }
+    ]
+  },
+  {
+    "input": "localhost",
+    "types": [
+      "LOCALHOST"
+    ],
+    "values": [
+      "localhost"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "LOCALHOST",
+        "v": "localhost",
+        "s": 0,
+        "e": 9
+      }
+    ]
+  },
+  {
+    "input": "localhosts",
+    "types": [
+      "WORD"
+    ],
+    "values": [
+      "localhosts"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "localhosts",
+        "s": 0,
+        "e": 10
+      }
+    ]
+  },
+  {
+    "input": "500px",
+    "types": [
+      "ASCIINUMERICAL"
+    ],
+    "values": [
+      "500px"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "ASCIINUMERICAL",
+        "v": "500px",
+        "s": 0,
+        "e": 5
+      }
+    ]
+  },
+  {
+    "input": "500-px",
+    "types": [
+      "NUM",
+      "HYPHEN",
+      "WORD"
+    ],
+    "values": [
+      "500",
+      "-",
+      "px"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "NUM",
+        "v": "500",
+        "s": 0,
+        "e": 3
+      },
+      {
+        "t": "HYPHEN",
+        "v": "-",
+        "s": 3,
+        "e": 4
+      },
+      {
+        "t": "WORD",
+        "v": "px",
+        "s": 4,
+        "e": 6
+      }
+    ]
+  },
+  {
+    "input": "-500px",
+    "types": [
+      "HYPHEN",
+      "ASCIINUMERICAL"
+    ],
+    "values": [
+      "-",
+      "500px"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "HYPHEN",
+        "v": "-",
+        "s": 0,
+        "e": 1
+      },
+      {
+        "t": "ASCIINUMERICAL",
+        "v": "500px",
+        "s": 1,
+        "e": 6
+      }
+    ]
+  },
+  {
+    "input": "500px-",
+    "types": [
+      "ASCIINUMERICAL",
+      "HYPHEN"
+    ],
+    "values": [
+      "500px",
+      "-"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "ASCIINUMERICAL",
+        "v": "500px",
+        "s": 0,
+        "e": 5
+      },
+      {
+        "t": "HYPHEN",
+        "v": "-",
+        "s": 5,
+        "e": 6
+      }
+    ]
+  },
+  {
+    "input": "123-456",
+    "types": [
+      "NUM",
+      "HYPHEN",
+      "NUM"
+    ],
+    "values": [
+      "123",
+      "-",
+      "456"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "NUM",
+        "v": "123",
+        "s": 0,
+        "e": 3
+      },
+      {
+        "t": "HYPHEN",
+        "v": "-",
+        "s": 3,
+        "e": 4
+      },
+      {
+        "t": "NUM",
+        "v": "456",
+        "s": 4,
+        "e": 7
+      }
+    ]
+  },
+  {
+    "input": "foo bar",
+    "types": [
+      "TLD",
+      "WS",
+      "TLD"
+    ],
+    "values": [
+      "foo",
+      " ",
+      "bar"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "TLD",
+        "v": "foo",
+        "s": 0,
+        "e": 3
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 3,
+        "e": 4
+      },
+      {
+        "t": "TLD",
+        "v": "bar",
+        "s": 4,
+        "e": 7
+      }
+    ]
+  },
+  {
+    "input": "çïrâ.ca",
+    "types": [
+      "UWORD",
+      "WORD",
+      "UWORD",
+      "DOT",
+      "TLD"
+    ],
+    "values": [
+      "çï",
+      "r",
+      "â",
+      ".",
+      "ca"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "UWORD",
+        "v": "çï",
+        "s": 0,
+        "e": 2
+      },
+      {
+        "t": "WORD",
+        "v": "r",
+        "s": 2,
+        "e": 3
+      },
+      {
+        "t": "UWORD",
+        "v": "â",
+        "s": 3,
+        "e": 4
+      },
+      {
+        "t": "DOT",
+        "v": ".",
+        "s": 4,
+        "e": 5
+      },
+      {
+        "t": "TLD",
+        "v": "ca",
+        "s": 5,
+        "e": 7
+      }
+    ]
+  },
+  {
+    "input": "❤️💚",
+    "types": [
+      "EMOJI"
+    ],
+    "values": [
+      "❤️💚"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "EMOJI",
+        "v": "❤️💚",
+        "s": 0,
+        "e": 4
+      }
+    ]
+  },
+  {
+    "input": "👊🏿🧑🏼‍🔬🌚",
+    "types": [
+      "EMOJI"
+    ],
+    "values": [
+      "👊🏿🧑🏼‍🔬🌚"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "EMOJI",
+        "v": "👊🏿🧑🏼‍🔬🌚",
+        "s": 0,
+        "e": 13
+      }
+    ]
+  },
+  {
+    "input": "www.🍕💩.ws",
+    "types": [
+      "WORD",
+      "DOT",
+      "EMOJI",
+      "DOT",
+      "TLD"
+    ],
+    "values": [
+      "www",
+      ".",
+      "🍕💩",
+      ".",
+      "ws"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "www",
+        "s": 0,
+        "e": 3
+      },
+      {
+        "t": "DOT",
+        "v": ".",
+        "s": 3,
+        "e": 4
+      },
+      {
+        "t": "EMOJI",
+        "v": "🍕💩",
+        "s": 4,
+        "e": 8
+      },
+      {
+        "t": "DOT",
+        "v": ".",
+        "s": 8,
+        "e": 9
+      },
+      {
+        "t": "TLD",
+        "v": "ws",
+        "s": 9,
+        "e": 11
+      }
+    ]
+  },
+  {
+    "input": "za̡͊͠͝lgό.gay",
+    "types": [
+      "TLD",
+      "SYM",
+      "SYM",
+      "SYM",
+      "SYM",
+      "WORD",
+      "UWORD",
+      "DOT",
+      "TLD"
+    ],
+    "values": [
+      "za",
+      "͠",
+      "̡",
+      "͊",
+      "͝",
+      "lg",
+      "ό",
+      ".",
+      "gay"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "TLD",
+        "v": "za",
+        "s": 0,
+        "e": 2
+      },
+      {
+        "t": "SYM",
+        "v": "͠",
+        "s": 2,
+        "e": 3
+      },
+      {
+        "t": "SYM",
+        "v": "̡",
+        "s": 3,
+        "e": 4
+      },
+      {
+        "t": "SYM",
+        "v": "͊",
+        "s": 4,
+        "e": 5
+      },
+      {
+        "t": "SYM",
+        "v": "͝",
+        "s": 5,
+        "e": 6
+      },
+      {
+        "t": "WORD",
+        "v": "lg",
+        "s": 6,
+        "e": 8
+      },
+      {
+        "t": "UWORD",
+        "v": "ό",
+        "s": 8,
+        "e": 9
+      },
+      {
+        "t": "DOT",
+        "v": ".",
+        "s": 9,
+        "e": 10
+      },
+      {
+        "t": "TLD",
+        "v": "gay",
+        "s": 10,
+        "e": 13
+      }
+    ]
+  },
+  {
+    "input": "Direniş İzleme Grubu'nun",
+    "types": [
+      "WORD",
+      "UWORD",
+      "WS",
+      "UWORD",
+      "WORD",
+      "WS",
+      "WORD",
+      "APOSTROPHE",
+      "WORD"
+    ],
+    "values": [
+      "Direni",
+      "ş",
+      " ",
+      "İ",
+      "zleme",
+      " ",
+      "Grubu",
+      "'",
+      "nun"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "Direni",
+        "s": 0,
+        "e": 6
+      },
+      {
+        "t": "UWORD",
+        "v": "ş",
+        "s": 6,
+        "e": 7
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 7,
+        "e": 8
+      },
+      {
+        "t": "UWORD",
+        "v": "İ",
+        "s": 8,
+        "e": 9
+      },
+      {
+        "t": "WORD",
+        "v": "zleme",
+        "s": 9,
+        "e": 14
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 14,
+        "e": 15
+      },
+      {
+        "t": "WORD",
+        "v": "Grubu",
+        "s": 15,
+        "e": 20
+      },
+      {
+        "t": "APOSTROPHE",
+        "v": "'",
+        "s": 20,
+        "e": 21
+      },
+      {
+        "t": "WORD",
+        "v": "nun",
+        "s": 21,
+        "e": 24
+      }
+    ]
+  },
+  {
+    "input": "example.com　　　テスト",
+    "types": [
+      "WORD",
+      "DOT",
+      "TLD",
+      "WS",
+      "UWORD"
+    ],
+    "values": [
+      "example",
+      ".",
+      "com",
+      "　　　",
+      "テスト"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "example",
+        "s": 0,
+        "e": 7
+      },
+      {
+        "t": "DOT",
+        "v": ".",
+        "s": 7,
+        "e": 8
+      },
+      {
+        "t": "TLD",
+        "v": "com",
+        "s": 8,
+        "e": 11
+      },
+      {
+        "t": "WS",
+        "v": "　　　",
+        "s": 11,
+        "e": 14
+      },
+      {
+        "t": "UWORD",
+        "v": "テスト",
+        "s": 14,
+        "e": 17
+      }
+    ]
+  },
+  {
+    "input": "#АБВ_бв #한글 #سلام",
+    "types": [
+      "POUND",
+      "UWORD",
+      "UNDERSCORE",
+      "UWORD",
+      "WS",
+      "POUND",
+      "UWORD",
+      "WS",
+      "POUND",
+      "UWORD"
+    ],
+    "values": [
+      "#",
+      "АБВ",
+      "_",
+      "бв",
+      " ",
+      "#",
+      "한글",
+      " ",
+      "#",
+      "سلام"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "POUND",
+        "v": "#",
+        "s": 0,
+        "e": 1
+      },
+      {
+        "t": "UWORD",
+        "v": "АБВ",
+        "s": 1,
+        "e": 4
+      },
+      {
+        "t": "UNDERSCORE",
+        "v": "_",
+        "s": 4,
+        "e": 5
+      },
+      {
+        "t": "UWORD",
+        "v": "бв",
+        "s": 5,
+        "e": 7
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 7,
+        "e": 8
+      },
+      {
+        "t": "POUND",
+        "v": "#",
+        "s": 8,
+        "e": 9
+      },
+      {
+        "t": "UWORD",
+        "v": "한글",
+        "s": 9,
+        "e": 11
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 11,
+        "e": 12
+      },
+      {
+        "t": "POUND",
+        "v": "#",
+        "s": 12,
+        "e": 13
+      },
+      {
+        "t": "UWORD",
+        "v": "سلام",
+        "s": 13,
+        "e": 17
+      }
+    ]
+  },
+  {
+    "input": "#おは・よう",
+    "types": [
+      "POUND",
+      "UWORD",
+      "FULLWIDTHMIDDLEDOT",
+      "UWORD"
+    ],
+    "values": [
+      "#",
+      "おは",
+      "・",
+      "よう"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "POUND",
+        "v": "#",
+        "s": 0,
+        "e": 1
+      },
+      {
+        "t": "UWORD",
+        "v": "おは",
+        "s": 1,
+        "e": 3
+      },
+      {
+        "t": "FULLWIDTHMIDDLEDOT",
+        "v": "・",
+        "s": 3,
+        "e": 4
+      },
+      {
+        "t": "UWORD",
+        "v": "よう",
+        "s": 4,
+        "e": 6
+      }
+    ]
+  },
+  {
+    "input": "テストexample.comテスト",
+    "types": [
+      "UWORD",
+      "WORD",
+      "DOT",
+      "TLD",
+      "UWORD"
+    ],
+    "values": [
+      "テスト",
+      "example",
+      ".",
+      "com",
+      "テスト"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "UWORD",
+        "v": "テスト",
+        "s": 0,
+        "e": 3
+      },
+      {
+        "t": "WORD",
+        "v": "example",
+        "s": 3,
+        "e": 10
+      },
+      {
+        "t": "DOT",
+        "v": ".",
+        "s": 10,
+        "e": 11
+      },
+      {
+        "t": "TLD",
+        "v": "com",
+        "s": 11,
+        "e": 14
+      },
+      {
+        "t": "UWORD",
+        "v": "テスト",
+        "s": 14,
+        "e": 17
+      }
+    ]
+  },
+  {
+    "input": "テストhttp://example.comテスト",
+    "types": [
+      "UWORD",
+      "SLASH_SCHEME",
+      "COLON",
+      "SLASH",
+      "SLASH",
+      "WORD",
+      "DOT",
+      "TLD",
+      "UWORD"
+    ],
+    "values": [
+      "テスト",
+      "http",
+      ":",
+      "/",
+      "/",
+      "example",
+      ".",
+      "com",
+      "テスト"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "UWORD",
+        "v": "テスト",
+        "s": 0,
+        "e": 3
+      },
+      {
+        "t": "SLASH_SCHEME",
+        "v": "http",
+        "s": 3,
+        "e": 7
+      },
+      {
+        "t": "COLON",
+        "v": ":",
+        "s": 7,
+        "e": 8
+      },
+      {
+        "t": "SLASH",
+        "v": "/",
+        "s": 8,
+        "e": 9
+      },
+      {
+        "t": "SLASH",
+        "v": "/",
+        "s": 9,
+        "e": 10
+      },
+      {
+        "t": "WORD",
+        "v": "example",
+        "s": 10,
+        "e": 17
+      },
+      {
+        "t": "DOT",
+        "v": ".",
+        "s": 17,
+        "e": 18
+      },
+      {
+        "t": "TLD",
+        "v": "com",
+        "s": 18,
+        "e": 21
+      },
+      {
+        "t": "UWORD",
+        "v": "テスト",
+        "s": 21,
+        "e": 24
+      }
+    ]
+  },
+  {
+    "input": "👻#PhotoOfTheDay",
+    "types": [
+      "EMOJI",
+      "POUND",
+      "WORD"
+    ],
+    "values": [
+      "👻",
+      "#",
+      "PhotoOfTheDay"
+    ],
+    "schemes": [],
+    "expected": [
+      {
+        "t": "EMOJI",
+        "v": "👻",
+        "s": 0,
+        "e": 2
+      },
+      {
+        "t": "POUND",
+        "v": "#",
+        "s": 2,
+        "e": 3
+      },
+      {
+        "t": "WORD",
+        "v": "PhotoOfTheDay",
+        "s": 3,
+        "e": 16
+      }
+    ]
+  },
+  {
+    "input": "stea",
+    "types": [
+      "WORD"
+    ],
+    "values": [
+      "stea"
+    ],
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "stea",
+        "s": 0,
+        "e": 4
+      }
+    ]
+  },
+  {
+    "input": "steam",
+    "types": [
+      "steam"
+    ],
+    "values": [
+      "steam"
+    ],
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "steam",
+        "v": "steam",
+        "s": 0,
+        "e": 5
+      }
+    ]
+  },
+  {
+    "input": "steams",
+    "types": [
+      "WORD"
+    ],
+    "values": [
+      "steams"
+    ],
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "steams",
+        "s": 0,
+        "e": 6
+      }
+    ]
+  },
+  {
+    "input": "view",
+    "types": [
+      "WORD"
+    ],
+    "values": [
+      "view"
+    ],
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "view",
+        "s": 0,
+        "e": 4
+      }
+    ]
+  },
+  {
+    "input": "view-",
+    "types": [
+      "WORD",
+      "HYPHEN"
+    ],
+    "values": [
+      "view",
+      "-"
+    ],
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "view",
+        "s": 0,
+        "e": 4
+      },
+      {
+        "t": "HYPHEN",
+        "v": "-",
+        "s": 4,
+        "e": 5
+      }
+    ]
+  },
+  {
+    "input": "view-s",
+    "types": [
+      "WORD",
+      "HYPHEN",
+      "WORD"
+    ],
+    "values": [
+      "view",
+      "-",
+      "s"
+    ],
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "view",
+        "s": 0,
+        "e": 4
+      },
+      {
+        "t": "HYPHEN",
+        "v": "-",
+        "s": 4,
+        "e": 5
+      },
+      {
+        "t": "WORD",
+        "v": "s",
+        "s": 5,
+        "e": 6
+      }
+    ]
+  },
+  {
+    "input": "view-sour",
+    "types": [
+      "WORD",
+      "HYPHEN",
+      "WORD"
+    ],
+    "values": [
+      "view",
+      "-",
+      "sour"
+    ],
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "view",
+        "s": 0,
+        "e": 4
+      },
+      {
+        "t": "HYPHEN",
+        "v": "-",
+        "s": 4,
+        "e": 5
+      },
+      {
+        "t": "WORD",
+        "v": "sour",
+        "s": 5,
+        "e": 9
+      }
+    ]
+  },
+  {
+    "input": "view-source",
+    "types": [
+      "view-source"
+    ],
+    "values": [
+      "view-source"
+    ],
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "view-source",
+        "v": "view-source",
+        "s": 0,
+        "e": 11
+      }
+    ]
+  },
+  {
+    "input": "view-sources",
+    "types": [
+      "view-source",
+      "WORD"
+    ],
+    "values": [
+      "view-source",
+      "s"
+    ],
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "view-source",
+        "v": "view-source",
+        "s": 0,
+        "e": 11
+      },
+      {
+        "t": "WORD",
+        "v": "s",
+        "s": 11,
+        "e": 12
+      }
+    ]
+  },
+  {
+    "input": "twitter dot com",
+    "types": [
+      "twitter",
+      "WS",
+      "TLD",
+      "WS",
+      "TLD"
+    ],
+    "values": [
+      "twitter",
+      " ",
+      "dot",
+      " ",
+      "com"
+    ],
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "twitter",
+        "v": "twitter",
+        "s": 0,
+        "e": 7
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 7,
+        "e": 8
+      },
+      {
+        "t": "TLD",
+        "v": "dot",
+        "s": 8,
+        "e": 11
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 11,
+        "e": 12
+      },
+      {
+        "t": "TLD",
+        "v": "com",
+        "s": 12,
+        "e": 15
+      }
+    ]
+  },
+  {
+    "input": "ms-settings",
+    "types": [
+      "ms-settings"
+    ],
+    "values": [
+      "ms-settings"
+    ],
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "ms-settings",
+        "v": "ms-settings",
+        "s": 0,
+        "e": 11
+      }
+    ]
+  },
+  {
+    "input": "geo",
+    "types": [
+      "geo"
+    ],
+    "values": [
+      "geo"
+    ],
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "geo",
+        "v": "geo",
+        "s": 0,
+        "e": 3
+      }
+    ]
+  },
+  {
+    "input": "42",
+    "types": [
+      "42"
+    ],
+    "values": [
+      "42"
+    ],
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "42",
+        "v": "42",
+        "s": 0,
+        "e": 2
+      }
+    ]
+  },
+  {
+    "input": "Hello, World!",
+    "schemes": [],
+    "expected": [
+      {
+        "t": "WORD",
+        "v": "Hello",
+        "s": 0,
+        "e": 5
+      },
+      {
+        "t": "COMMA",
+        "v": ",",
+        "s": 5,
+        "e": 6
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 6,
+        "e": 7
+      },
+      {
+        "t": "TLD",
+        "v": "World",
+        "s": 7,
+        "e": 12
+      },
+      {
+        "t": "EXCLAMATION",
+        "v": "!",
+        "s": 12,
+        "e": 13
+      }
+    ],
+    "types": [
+      "WORD",
+      "COMMA",
+      "WS",
+      "TLD",
+      "EXCLAMATION"
+    ],
+    "values": [
+      "Hello",
+      ",",
+      " ",
+      "World",
+      "!"
+    ]
+  },
+  {
+    "input": "steam://hello",
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "steam",
+        "v": "steam",
+        "s": 0,
+        "e": 5
+      },
+      {
+        "t": "COLON",
+        "v": ":",
+        "s": 5,
+        "e": 6
+      },
+      {
+        "t": "SLASH",
+        "v": "/",
+        "s": 6,
+        "e": 7
+      },
+      {
+        "t": "SLASH",
+        "v": "/",
+        "s": 7,
+        "e": 8
+      },
+      {
+        "t": "WORD",
+        "v": "hello",
+        "s": 8,
+        "e": 13
+      }
+    ],
+    "types": [
+      "steam",
+      "COLON",
+      "SLASH",
+      "SLASH",
+      "WORD"
+    ],
+    "values": [
+      "steam",
+      ":",
+      "/",
+      "/",
+      "hello"
+    ]
+  },
+  {
+    "input": "twitter dot com",
+    "schemes": [
+      [
+        "42",
+        true
+      ],
+      [
+        "geo",
+        false
+      ],
+      [
+        "ms-settings",
+        true
+      ],
+      [
+        "org",
+        false
+      ],
+      [
+        "steam",
+        true
+      ],
+      [
+        "twitter",
+        false
+      ],
+      [
+        "view-source",
+        false
+      ]
+    ],
+    "expected": [
+      {
+        "t": "twitter",
+        "v": "twitter",
+        "s": 0,
+        "e": 7
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 7,
+        "e": 8
+      },
+      {
+        "t": "TLD",
+        "v": "dot",
+        "s": 8,
+        "e": 11
+      },
+      {
+        "t": "WS",
+        "v": " ",
+        "s": 11,
+        "e": 12
+      },
+      {
+        "t": "TLD",
+        "v": "com",
+        "s": 12,
+        "e": 15
+      }
+    ],
+    "types": [
+      "twitter",
+      "WS",
+      "TLD",
+      "WS",
+      "TLD"
+    ],
+    "values": [
+      "twitter",
+      " ",
+      "dot",
+      " ",
+      "com"
+    ]
+  }
+]

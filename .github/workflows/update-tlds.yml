@@ -1,0 +1,39 @@
+name: Update TLDs
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-tlds
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+      - run: dart pub get
+      - run: dart run tool/update_tlds.dart
+      - run: dart format --output=none --set-exit-if-changed .
+      - run: dart test
+      - uses: peter-evans/create-pull-request@v8
+        with:
+          branch: automated/update-tlds
+          add-paths: lib/src/tlds.dart
+          commit-message: Update IANA top-level domains
+          title: Update IANA top-level domains
+          body: |
+            Refresh the compact TLD tries from the authoritative IANA list.
+
+            The updater decodes internationalized labels and validates both
+            trie round trips. The Dart test suite passes with the updated list.
+          delete-branch: true

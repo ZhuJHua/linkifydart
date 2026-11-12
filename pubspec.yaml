@@ -1,0 +1,16 @@
+name: linkifydart
+version: 0.1.0
+description: A dependency-free Dart port of linkifyjs 4.3.3 for detecting URLs and email addresses with typed options and UTF-16 source offsets.
+repository: https://github.com/ZhuJHua/linkifydart
+issue_tracker: https://github.com/ZhuJHua/linkifydart/issues
+topics:
+  - linkify
+  - url
+  - autolink
+  - parser
+  - text
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+dev_dependencies:
+  test: 1.25.5
+  lints: 3.0.0

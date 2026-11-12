@@ -1,0 +1,972 @@
+[
+  {
+    "input": "google.com",
+    "types": [
+      "url"
+    ],
+    "values": [
+      "google.com"
+    ]
+  },
+  {
+    "input": "I like google.com the most",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "I like ",
+      "google.com",
+      " the most"
+    ]
+  },
+  {
+    "input": "I like Google.com the most",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "I like ",
+      "Google.com",
+      " the most"
+    ]
+  },
+  {
+    "input": "there are two tests, brennan.com and nick.ca -- do they work?",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "there are two tests, ",
+      "brennan.com",
+      " and ",
+      "nick.ca",
+      " -- do they work?"
+    ]
+  },
+  {
+    "input": "there are two tests!brennan.com. and nick.ca? -- do they work?",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "there are two tests!",
+      "brennan.com",
+      ". and ",
+      "nick.ca",
+      "? -- do they work?"
+    ]
+  },
+  {
+    "input": "This [i.imgur.com/ckSj2Ba.jpg)] should also work",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "This [",
+      "i.imgur.com/ckSj2Ba.jpg",
+      ")] should also work"
+    ]
+  },
+  {
+    "input": "A link is http://nick.is.awesome/?q=nick+amazing&nick=yo%29%30hellp another is http://nick.con/?q=look",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url"
+    ],
+    "values": [
+      "A link is ",
+      "http://nick.is.awesome/?q=nick+amazing&nick=yo%29%30hellp",
+      " another is ",
+      "http://nick.con/?q=look"
+    ]
+  },
+  {
+    "input": "SOme UrlS http://google.com https://google1.com google2.com google.com/search?q=potatoes+oven goo.gl/0192n1 google.com?q=asda test bit.ly/0912j www.bob.com indigo.dev.soapbox.co/mobile google.com/?q=.exe flickr.com/linktoimage.jpg",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url",
+      "text",
+      "url",
+      "text",
+      "url",
+      "text",
+      "url",
+      "text",
+      "url",
+      "text",
+      "url",
+      "text",
+      "url",
+      "text",
+      "url",
+      "text",
+      "url",
+      "text",
+      "url"
+    ],
+    "values": [
+      "SOme UrlS ",
+      "http://google.com",
+      " ",
+      "https://google1.com",
+      " ",
+      "google2.com",
+      " ",
+      "google.com/search?q=potatoes+oven",
+      " ",
+      "goo.gl/0192n1",
+      " ",
+      "google.com",
+      "?q=asda test ",
+      "bit.ly/0912j",
+      " ",
+      "www.bob.com",
+      " ",
+      "indigo.dev.soapbox.co/mobile",
+      " ",
+      "google.com/?q=.exe",
+      " ",
+      "flickr.com/linktoimage.jpg"
+    ]
+  },
+  {
+    "input": "None.of these.should be.Links okay.please?",
+    "types": [
+      "text"
+    ],
+    "values": [
+      "None.of these.should be.Links okay.please?"
+    ]
+  },
+  {
+    "input": "Here are some random emails: nick@soapbox.com, nick@soapbox.soda (invalid), Nick@dev.dev.soapbox.co, random nick.frasser_hitsend@http://facebook.com",
+    "types": [
+      "text",
+      "email",
+      "text",
+      "email",
+      "text",
+      "url"
+    ],
+    "values": [
+      "Here are some random emails: ",
+      "nick@soapbox.com",
+      ", nick@soapbox.soda (invalid), ",
+      "Nick@dev.dev.soapbox.co",
+      ", random nick.frasser_hitsend@",
+      "http://facebook.com"
+    ]
+  },
+  {
+    "input": "t.c.com/sadqad is a great domain, so is ftp://i.am.a.b.ca/ okay?",
+    "types": [
+      "url",
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "t.c.com/sadqad",
+      " is a great domain, so is ",
+      "ftp://i.am.a.b.ca/",
+      " okay?"
+    ]
+  },
+  {
+    "input": "This port is too short someport.com: this port is too long http://googgle.com:789023/myQuery this port is just right https://github.com:8080/SoapBox/jQuery-linkify/",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url",
+      "text",
+      "url"
+    ],
+    "values": [
+      "This port is too short ",
+      "someport.com",
+      ": this port is too long ",
+      "http://googgle.com:789023/myQuery",
+      " this port is just right ",
+      "https://github.com:8080/SoapBox/jQuery-linkify/"
+    ]
+  },
+  {
+    "input": "The best Url http://google.com/?love=true, and t.co",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url"
+    ],
+    "values": [
+      "The best Url ",
+      "http://google.com/?love=true",
+      ", and ",
+      "t.co"
+    ]
+  },
+  {
+    "input": "Please email me at testy.test+123@gmail.com",
+    "types": [
+      "text",
+      "email"
+    ],
+    "values": [
+      "Please email me at ",
+      "testy.test+123@gmail.com"
+    ]
+  },
+  {
+    "input": "http://aws.amazon.com:8080/nick?was=here and localhost:3000 are also domains",
+    "types": [
+      "url",
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "http://aws.amazon.com:8080/nick?was=here",
+      " and ",
+      "localhost:3000",
+      " are also domains"
+    ]
+  },
+  {
+    "input": "http://500-px.com is a real domain?",
+    "types": [
+      "url",
+      "text"
+    ],
+    "values": [
+      "http://500-px.com",
+      " is a real domain?"
+    ]
+  },
+  {
+    "input": "IP loops like email? 192.168.0.1@gmail.com! works!!",
+    "types": [
+      "text",
+      "email",
+      "text"
+    ],
+    "values": [
+      "IP loops like email? ",
+      "192.168.0.1@gmail.com",
+      "! works!!"
+    ]
+  },
+  {
+    "input": "Url like bro-215.co; with a hyphen?",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "Url like ",
+      "bro-215.co",
+      "; with a hyphen?"
+    ]
+  },
+  {
+    "input": "This Url http://23456789098.sydney is a number",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "This Url ",
+      "http://23456789098.sydney",
+      " is a number"
+    ]
+  },
+  {
+    "input": "This Url http://23456789098.sydney is a number",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "This Url ",
+      "http://23456789098.sydney",
+      " is a number"
+    ]
+  },
+  {
+    "input": "A Url with only numbers is 123.456.ca another is //7.8.com/?wat=1 is valid",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "A Url with only numbers is ",
+      "123.456.ca",
+      " another is //",
+      "7.8.com/?wat=1",
+      " is valid"
+    ]
+  },
+  {
+    "input": "Url Numbers 6.wat.78.where.eu and u.0.e.9.kp",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url"
+    ],
+    "values": [
+      "Url Numbers ",
+      "6.wat.78.where.eu",
+      " and ",
+      "u.0.e.9.kp"
+    ]
+  },
+  {
+    "input": "Emails like nick:f@gmail.com do not have colons in them",
+    "types": [
+      "text",
+      "email",
+      "text"
+    ],
+    "values": [
+      "Emails like nick:",
+      "f@gmail.com",
+      " do not have colons in them"
+    ]
+  },
+  {
+    "input": "Emails cannot have two dots, e.g.: nick..f@yahoo.ca",
+    "types": [
+      "text",
+      "email"
+    ],
+    "values": [
+      "Emails cannot have two dots, e.g.: nick..",
+      "f@yahoo.ca"
+    ]
+  },
+  {
+    "input": "The `mailto:` part should be included in mailto:this.is.a.test@yandex.ru",
+    "types": [
+      "text",
+      "url"
+    ],
+    "values": [
+      "The `mailto:` part should be included in ",
+      "mailto:this.is.a.test@yandex.ru"
+    ]
+  },
+  {
+    "input": "mailto:echalk-dev@logicify.com?Subject=Hello%20again is another test",
+    "types": [
+      "url",
+      "text"
+    ],
+    "values": [
+      "mailto:echalk-dev@logicify.com?Subject=Hello%20again",
+      " is another test"
+    ]
+  },
+  {
+    "input": "Mailto is greedy mailto:localhost?subject=Hello%20World.",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "Mailto is greedy ",
+      "mailto:localhost?subject=Hello%20World",
+      "."
+    ]
+  },
+  {
+    "input": "Emails like: test@42.domain.com and test@42.abc.11.domain.com should be matched in its entirety.",
+    "types": [
+      "text",
+      "email",
+      "text",
+      "email",
+      "text"
+    ],
+    "values": [
+      "Emails like: ",
+      "test@42.domain.com",
+      " and ",
+      "test@42.abc.11.domain.com",
+      " should be matched in its entirety."
+    ]
+  },
+  {
+    "input": "Bu haritanın verileri Direniş İzleme Grubu'nun yaptığı Türkiye İşçi Eylemleri haritası ile birleşebilir esasen. https://graphcommons.com/graphs/00af1cd8-5a67-40b1-86e5-32beae436f7c?show=Comments",
+    "types": [
+      "text",
+      "url"
+    ],
+    "values": [
+      "Bu haritanın verileri Direniş İzleme Grubu'nun yaptığı Türkiye İşçi Eylemleri haritası ile birleşebilir esasen. ",
+      "https://graphcommons.com/graphs/00af1cd8-5a67-40b1-86e5-32beae436f7c?show=Comments"
+    ]
+  },
+  {
+    "input": "Links with brackets and parens https://en.wikipedia.org/wiki/Blur_[band] wat",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "Links with brackets and parens ",
+      "https://en.wikipedia.org/wiki/Blur_[band]",
+      " wat"
+    ]
+  },
+  {
+    "input": "This has dots {https://msdn.microsoft.com/en-us/library/aa752574(VS.85).aspx}",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "This has dots {",
+      "https://msdn.microsoft.com/en-us/library/aa752574(VS.85).aspx",
+      "}"
+    ]
+  },
+  {
+    "input": "A really funky one (example.com/?id=asd2{hellow}and%20it%20continues(23&((@)) and it ends",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "A really funky one (",
+      "example.com/?id=asd2{hellow}and%20it%20continues(23&((@)",
+      ") and it ends"
+    ]
+  },
+  {
+    "input": "Url enclosed in angle brackets: <http://example.com/exemplary> should not include trailing bracket",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "Url enclosed in angle brackets: <",
+      "http://example.com/exemplary",
+      "> should not include trailing bracket"
+    ]
+  },
+  {
+    "input": "Url with angle brackets in it: http://example.com/exemplary_<remix> should be included",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "Url with angle brackets in it: ",
+      "http://example.com/exemplary_<remix>",
+      " should be included"
+    ]
+  },
+  {
+    "input": "Force http:/ and http:// are not but http://a and http://b.local?qeasd3qas=23 are all links",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "Force http:/ and http:// are not but ",
+      "http://a",
+      " and ",
+      "http://b.local?qeasd3qas=23",
+      " are all links"
+    ]
+  },
+  {
+    "input": "HTTP Auth Urls should work: http://username:password@example.com",
+    "types": [
+      "text",
+      "url"
+    ],
+    "values": [
+      "HTTP Auth Urls should work: ",
+      "http://username:password@example.com"
+    ]
+  },
+  {
+    "input": "Trailing equal symbol should work: http://example.com/foo/bar?token=CtFOYuk0wjiqvHZF==",
+    "types": [
+      "text",
+      "url"
+    ],
+    "values": [
+      "Trailing equal symbol should work: ",
+      "http://example.com/foo/bar?token=CtFOYuk0wjiqvHZF=="
+    ]
+  },
+  {
+    "input": "\"https://surrounded.by.quotes/\"",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "\"",
+      "https://surrounded.by.quotes/",
+      "\""
+    ]
+  },
+  {
+    "input": "More weird character in http://facebook.com/#aZ?/:@-._~!$&'()*+,;= that Url",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "More weird character in ",
+      "http://facebook.com/#aZ?/:@-._~!$&'()*+,;=",
+      " that Url"
+    ]
+  },
+  {
+    "input": "Email with a underscore is n_frasser@example.xyz asd",
+    "types": [
+      "text",
+      "email",
+      "text"
+    ],
+    "values": [
+      "Email with a underscore is ",
+      "n_frasser@example.xyz",
+      " asd"
+    ]
+  },
+  {
+    "input": "Url followed by nbsp: example.com/foo bar",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "Url followed by nbsp: ",
+      "example.com/foo",
+      " bar"
+    ]
+  },
+  {
+    "input": "A link in 'singlequote.club/wat' extra fluff at the end",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "A link in '",
+      "singlequote.club/wat",
+      "' extra fluff at the end"
+    ]
+  },
+  {
+    "input": "Email with mailsomething dot com domain in foo@mailsomething.com",
+    "types": [
+      "text",
+      "email"
+    ],
+    "values": [
+      "Email with mailsomething dot com domain in ",
+      "foo@mailsomething.com"
+    ]
+  },
+  {
+    "input": "http://über.de",
+    "types": [
+      "url"
+    ],
+    "values": [
+      "http://über.de"
+    ]
+  },
+  {
+    "input": "www.öko.de",
+    "types": [
+      "url"
+    ],
+    "values": [
+      "www.öko.de"
+    ]
+  },
+  {
+    "input": "www.🍕💩.ws i❤️.ws",
+    "types": [
+      "url",
+      "text",
+      "url"
+    ],
+    "values": [
+      "www.🍕💩.ws",
+      " ",
+      "i❤️.ws"
+    ]
+  },
+  {
+    "input": "o'malley@example.com.au",
+    "types": [
+      "email"
+    ],
+    "values": [
+      "o'malley@example.com.au"
+    ]
+  },
+  {
+    "input": "foohttp://example.com bar",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "foohttp://",
+      "example.com",
+      " bar"
+    ]
+  },
+  {
+    "input": "テストhttp://example.comテスト",
+    "types": [
+      "text",
+      "url"
+    ],
+    "values": [
+      "テスト",
+      "http://example.comテスト"
+    ]
+  },
+  {
+    "input": "file:/etc/motd",
+    "types": [
+      "url"
+    ],
+    "values": [
+      "file:/etc/motd"
+    ]
+  },
+  {
+    "input": "file:///etc/motd",
+    "types": [
+      "url"
+    ],
+    "values": [
+      "file:///etc/motd"
+    ]
+  },
+  {
+    "input": "~a@example.org",
+    "types": [
+      "email"
+    ],
+    "values": [
+      "~a@example.org"
+    ]
+  },
+  {
+    "input": "~@example.org",
+    "types": [
+      "email"
+    ],
+    "values": [
+      "~@example.org"
+    ]
+  },
+  {
+    "input": "~emersion/soju-dev@lists.sr.ht",
+    "types": [
+      "email"
+    ],
+    "values": [
+      "~emersion/soju-dev@lists.sr.ht"
+    ]
+  },
+  {
+    "input": "test@example2.com",
+    "types": [
+      "email"
+    ],
+    "values": [
+      "test@example2.com"
+    ]
+  },
+  {
+    "input": "noreply@500px.so",
+    "types": [
+      "email"
+    ],
+    "values": [
+      "noreply@500px.so"
+    ]
+  },
+  {
+    "input": "http@example.com",
+    "types": [
+      "email"
+    ],
+    "values": [
+      "http@example.com"
+    ]
+  },
+  {
+    "input": "mailto@example.com",
+    "types": [
+      "email"
+    ],
+    "values": [
+      "mailto@example.com"
+    ]
+  },
+  {
+    "input": "http.org",
+    "types": [
+      "url"
+    ],
+    "values": [
+      "http.org"
+    ]
+  },
+  {
+    "input": "http123.org",
+    "types": [
+      "url"
+    ],
+    "values": [
+      "http123.org"
+    ]
+  },
+  {
+    "input": "http-help.org",
+    "types": [
+      "url"
+    ],
+    "values": [
+      "http-help.org"
+    ]
+  },
+  {
+    "input": "view-source.net",
+    "types": [
+      "url"
+    ],
+    "values": [
+      "view-source.net"
+    ]
+  },
+  {
+    "input": "steam.com",
+    "types": [
+      "url"
+    ],
+    "values": [
+      "steam.com"
+    ]
+  },
+  {
+    "input": "Hello\nWorld",
+    "types": [
+      "text",
+      "nl",
+      "text"
+    ],
+    "values": [
+      "Hello",
+      "\n",
+      "World"
+    ]
+  },
+  {
+    "input": "And http://↑↑↓↓←→←→ba.tk/ is also a URL",
+    "types": [
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "And ",
+      "http://↑↑↓↓←→←→ba.tk/",
+      " is also a URL"
+    ]
+  },
+  {
+    "input": "This Url www.drive1.com with www and digits also www.500px.com",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url"
+    ],
+    "values": [
+      "This Url ",
+      "www.drive1.com",
+      " with www and digits also ",
+      "www.500px.com"
+    ]
+  },
+  {
+    "input": "Link 1(http://foo.com/blah_blah) Link 2(http://foo.com/blah_blah_(wikipedia)_(again))",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "Link 1(",
+      "http://foo.com/blah_blah",
+      ") Link 2(",
+      "http://foo.com/blah_blah_(wikipedia)_(again)",
+      ")"
+    ]
+  },
+  {
+    "input": "Link 1（http://foo.com/blah_blah） Link 2（http://foo.com/blah_blah_(wikipedia)_(again)）",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "Link 1（",
+      "http://foo.com/blah_blah",
+      "） Link 2（",
+      "http://foo.com/blah_blah_(wikipedia)_(again)",
+      "）"
+    ]
+  },
+  {
+    "input": "Link 1『http://foo.com/blah_blah』 Link 2『http://foo.com/blah_blah_(wikipedia)_(again)』",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "Link 1『",
+      "http://foo.com/blah_blah",
+      "』 Link 2『",
+      "http://foo.com/blah_blah_(wikipedia)_(again)",
+      "』"
+    ]
+  },
+  {
+    "input": "https://google.com￼this",
+    "types": [
+      "url",
+      "text"
+    ],
+    "values": [
+      "https://google.com",
+      "￼this"
+    ]
+  },
+  {
+    "input": "some string with somefile.mp4 token",
+    "types": [
+      "text"
+    ],
+    "values": [
+      "some string with somefile.mp4 token"
+    ]
+  },
+  {
+    "input": "hp--community.force.com",
+    "types": [
+      "url"
+    ],
+    "values": [
+      "hp--community.force.com"
+    ]
+  },
+  {
+    "input": "example@hp--community.force.com",
+    "types": [
+      "email"
+    ],
+    "values": [
+      "example@hp--community.force.com"
+    ]
+  },
+  {
+    "input": "Google maps URL https://www.google.fr/maps/place/42°56'46.6\"N+0°38'31.6\"E/@42.9462778,0.6421111,194m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d42.9462778!4d0.6421111 or without quotes google.fr/maps/place/42°56'46.6\"N+0°38'31.6\"E/@42.9462778,0.6421111,194m.",
+    "types": [
+      "text",
+      "url",
+      "text",
+      "url",
+      "text"
+    ],
+    "values": [
+      "Google maps URL ",
+      "https://www.google.fr/maps/place/42°56'46.6\"N+0°38'31.6\"E/@42.9462778,0.6421111,194m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d42.9462778!4d0.6421111",
+      " or without quotes ",
+      "google.fr/maps/place/42°56'46.6\"N+0°38'31.6\"E/@42.9462778,0.6421111,194m",
+      "."
+    ]
+  },
+  {
+    "input": "https://zh.wikipedia.org/wiki/%E7%B4%85_(%E5%BC%B5%E5%9C%8B%E6%A6%AE%E5%B0%88%E8%BC%AF)",
+    "types": [
+      "url"
+    ],
+    "values": [
+      "https://zh.wikipedia.org/wiki/%E7%B4%85_(%E5%BC%B5%E5%9C%8B%E6%A6%AE%E5%B0%88%E8%BC%AF)"
+    ]
+  },
+  {
+    "input": "toto@example.com:123",
+    "types": [
+      "email",
+      "text"
+    ],
+    "values": [
+      "toto@example.com",
+      ":123"
+    ]
+  }
+]

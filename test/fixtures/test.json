@@ -1,0 +1,67 @@
+[
+  {
+    "input": "Herp derp",
+    "expected": false,
+    "type": null
+  },
+  {
+    "input": "Herp derp",
+    "expected": false,
+    "type": "email"
+  },
+  {
+    "input": "Herp derp",
+    "expected": false,
+    "type": "asdf"
+  },
+  {
+    "input": "https://google.com/?q=yey",
+    "expected": true,
+    "type": null
+  },
+  {
+    "input": "https://google.com/?q=yey",
+    "expected": true,
+    "type": "url"
+  },
+  {
+    "input": "https://google.com/?q=yey",
+    "expected": false,
+    "type": "email"
+  },
+  {
+    "input": "test+4@uwaterloo.ca",
+    "expected": true,
+    "type": null
+  },
+  {
+    "input": "test+4@uwaterloo.ca",
+    "expected": false,
+    "type": "url"
+  },
+  {
+    "input": "test+4@uwaterloo.ca",
+    "expected": true,
+    "type": "email"
+  },
+  {
+    "input": "mailto:test+5@uwaterloo.ca",
+    "expected": true,
+    "type": "url"
+  },
+  {
+    "input": "t.co",
+    "expected": true,
+    "type": null
+  },
+  {
+    "input": "t.co g.co",
+    "expected": false,
+    "type": null
+  },
+  {
+    "input": "test@g.co t.co",
+    "expected": false,
+    "type": null
+  }
+]
